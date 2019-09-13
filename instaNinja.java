@@ -24,11 +24,11 @@ public class instaNinja {
 	public static void main(String[] args) throws MalformedURLException, InterruptedException 
 	{
 //		Insta_ninja a=new Insta_ninja();
-//		a.connectServer("ultron","192.168.1.8:5555","Android","6.0.1");
+//		a.connectServer("ultron","************","Android","6.0.1");
 //		a.App_info("com.instagram.android","com.instagram.mainactivity.MainActivity");
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability("deviceName", "ultron");
-		cap.setCapability("udid", "192.168.1.8:5555");
+		cap.setCapability("udid", "******************");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("platformVersion", "6.0.1");
 		cap.setCapability("appPackage", "com.instagram.android");
@@ -43,8 +43,8 @@ public class instaNinja {
 		driver.findElement(By.id("com.instagram.android:id/log_in_button")).click();
 //		                                                       *****************login credentials***************
 		driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
-		driver.findElement(By.id("com.instagram.android:id/login_username")).sendKeys("ninjatester101@gmail.com");
-		driver.findElement(By.id("com.instagram.android:id/password")).sendKeys("ninjatester@101");
+		driver.findElement(By.id("com.instagram.android:id/login_username")).sendKeys("****************");
+		driver.findElement(By.id("com.instagram.android:id/password")).sendKeys("*******************");
 		driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]")).click();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
@@ -64,7 +64,7 @@ public class instaNinja {
 //		driver.findElement(By.id("com.instagram.android:id/button_send")).click();
 				
 //		                                                        *********************Follow***********************
-		String username="_loksa";
+		String username="ninjatester101x";
 		driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Search and Explore\"]")).click();
 		driver.findElement(By.id("com.instagram.android:id/action_bar_search_edit_text")).click();
 		driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
