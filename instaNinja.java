@@ -33,9 +33,6 @@ public class instaNinja {
 		cap.setCapability("platformVersion", "6.0.1");
 		cap.setCapability("appPackage", "com.instagram.android");
 		cap.setCapability("appActivity", "com.instagram.mainactivity.MainActivity");
-		cap.setCapability("noSign", true);
-		cap.setCapability("noReset", true);
-		cap.setCapability("fullReset", false);
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		AppiumDriver<MobileElement>driver=new AppiumDriver<MobileElement>(url,cap);
 //		                                                       ******************login button*******************
