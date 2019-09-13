@@ -64,7 +64,7 @@ public class instaNinja {
 //		driver.findElement(By.id("com.instagram.android:id/button_send")).click();
 				
 //		                                                        *********************Follow***********************
-		String username="ninjatester101x";
+		String username="ninjatester101";
 		driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Search and Explore\"]")).click();
 		driver.findElement(By.id("com.instagram.android:id/action_bar_search_edit_text")).click();
 		driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
